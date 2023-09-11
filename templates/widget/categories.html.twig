@@ -1,8 +1,8 @@
 <div class="p-4">
     <h4 class="fst-italic">Catégories</h4>
     <ol class="list-unstyled mb-0">
-            <li><a class="text-decoration-none" href="#">Encres</a></li>
-            <li><a class="text-decoration-none" href="#">Encres</a></li>
-            <li><a class="text-decoration-none" href="#">Encres</a></li>
+        {% for category in categories %}
+            <li><a class="text-decoration-none" href="#">{{ category.name }}</a></li>
+        {% endfor %}
     </ol>
 </div>
